@@ -5,4 +5,5 @@
 * [온라인 코드 리뷰 과정](https://github.com/woowacourse/woowacourse-docs/blob/master/maincourse/README.md)
 
 ## 기능 목록 구현
--[ ] 충동유발
+- [ ] 충동유발
+- [ ] 충동램

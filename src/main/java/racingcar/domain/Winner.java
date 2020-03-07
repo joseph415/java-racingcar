@@ -15,10 +15,7 @@ public class Winner {
     }
 
     private int getWinnerPosition(List<Car> racingCars) {
-        if (racingCars.stream().mapToInt(Car::getPosition).max().isPresent()) {
-            return racingCars.stream().mapToInt(Car::getPosition).max().getAsInt();
-        }
-        throw new NullPointerException("position 이 제대로 할당되지 않았습니다.");
+        return racingCars.stream().mapToInt(Car::getPosition).max().orElseThrow(IllegalArgumentException::new);
     }
 
 }

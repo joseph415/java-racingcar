@@ -3,6 +3,7 @@ package racingcar.domain;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class RacingGame {
 
@@ -23,11 +24,8 @@ public class RacingGame {
     }
 
     public static List<Car> generateCars(String[] carNames) {
-        final List<Car> racingCarList = new ArrayList<>(carNames.length);
-
-        Arrays.stream(carNames)
-                .forEach(carName -> racingCarList.add(new Car(carName)));
-
-        return racingCarList;
+        return Arrays.stream(carNames)
+                .map(Car::new) // 메서드 레퍼런스 활용 ->  .map(Car::new)
+                .collect(Collectors.toList());
     }
 }

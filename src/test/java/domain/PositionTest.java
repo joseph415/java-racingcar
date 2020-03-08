@@ -19,23 +19,21 @@ public class PositionTest {
         Assertions.assertThatCode(()->new Position(-1)).isInstanceOf(IllegalArgumentException.class);
     }
 
-    @ParameterizedTest
-    @ValueSource(ints = {4,5})
+    @Test
     @DisplayName("전진 테스트")
-    void movePositionTest(int input){
+    void movePositionTest(){
         Position position = new Position(0);
-        position.movePosition(input);
+        position.movePosition(true);
 
         Assertions.assertThat(position).extracting("position").isEqualTo(1);
     }
 
-    @ParameterizedTest
-    @ValueSource(ints = {2,3})
+    @Test
     @DisplayName("전진 테스트")
-    void no_movePositionTest(int input){
+    void no_movePositionTest(){
         Position position = new Position(0);
 
-        position.movePosition(input);
+        position.movePosition(false);
 
         Assertions.assertThat(position).extracting("position").isEqualTo(0);
     }

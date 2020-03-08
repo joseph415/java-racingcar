@@ -2,7 +2,6 @@ package domain;
 
 public class Position {
     private static final int INIT_POSITION_NUMBER = 0;
-    public static final int MOVE_STANDARD_NUMBER = 4;
     private  int position;
 
     public Position(int position) {
@@ -16,8 +15,8 @@ public class Position {
         }
     }
 
-    public void movePosition(int input) {
-        if(input >= MOVE_STANDARD_NUMBER){
+    public void movePosition(boolean isMove) {
+        if(isMove){
             position++;
         }
     }

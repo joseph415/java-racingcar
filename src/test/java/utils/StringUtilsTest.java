@@ -1,8 +1,9 @@
 package utils;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class StringUtilsTest {
     @Test
@@ -11,6 +12,6 @@ public class StringUtilsTest {
         String input = "ase,ase,sdr";
         String[] expected = {"ase","ase","sdr"};
 
-        Assertions.assertThat(StringUtils.stringParse(input)).isEqualTo(expected);
+        assertThat(StringUtils.stringParse(input)).isEqualTo(expected);
     }
 }

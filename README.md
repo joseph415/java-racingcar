@@ -5,7 +5,7 @@
 * [온라인 코드 리뷰 과정](https://github.com/woowacourse/woowacourse-docs/blob/master/maincourse/README.md)
 
 ## 기능 목록 구현
-- [ ] 자동차의 이름을 입력받는다(쉼표(,)로 분리)
+- [x] 자동차의 이름을 입력받는다(쉼표(,)로 분리)
     - 예외처리
         - [ ] 이름은 5글자 이하만 가능하다.
 - [ ] 몇번을 이동할 것인지 입력 받는다 

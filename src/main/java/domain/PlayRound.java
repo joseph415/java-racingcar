@@ -5,7 +5,7 @@ import utils.StringUtils;
 public class PlayRound {
     private int playRound;
 
-    PlayRound(String playRound) {
+    public PlayRound(String playRound) {
         validateNull(playRound);
         validateNumberFormat(playRound);
         validatePositiveNumber(playRound);
@@ -33,4 +33,7 @@ public class PlayRound {
         }
     }
 
+    public int getPlayRound() {
+        return playRound;
+    }
 }

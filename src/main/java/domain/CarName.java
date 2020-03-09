@@ -17,4 +17,8 @@ public class CarName {
             throw new IllegalArgumentException("이름 입력 오류 입니다. 재입력해주세요");
         }
     }
+
+    public String getCarName() {
+        return carName;
+    }
 }

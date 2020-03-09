@@ -1,8 +1,8 @@
 package domain;
 
-public class Position {
+public class Position  {
     private static final int INIT_POSITION_NUMBER = 0;
-    private  int position;
+    private int position;
 
     public Position(int position) {
         validatePosition(position);
@@ -19,5 +19,9 @@ public class Position {
         if(isMove){
             position++;
         }
+    }
+
+    public int getPosition() {
+        return position;
     }
 }
